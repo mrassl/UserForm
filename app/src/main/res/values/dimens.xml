@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="titulos_medida">40sp</dimen>
+    <dimen name="margen_hor">16dp</dimen>
+    <dimen name="margen_ver">16dp</dimen>
+    <dimen name="margen_der">16dp</dimen>
+    <dimen name="margen_izq">16dp</dimen>
+    <dimen name="text_size">25sp</dimen>
+    <dimen name="margin_top_tittle">1dp</dimen>
+</resources>

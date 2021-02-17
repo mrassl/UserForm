@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margen_hor"
+    android:paddingLeft="@dimen/margen_izq"
+    android:paddingEnd="@dimen/margen_der"
+    android:paddingRight="@dimen/margen_der"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDatosPersonales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_tittle"
+                android:gravity="center_horizontal"
+                android:text="@string/form_tittle"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold|italic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_tit_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margen_hor"
+                    android:background="@color/colorPrimaryVariant"
+                    android:hint="@string/tit_nombre"
+                    android:inputType="textPersonName"
+                    android:paddingStart="@dimen/margen_izq"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:paddingEnd="@dimen/margen_der"
+                    android:paddingRight="@dimen/margen_der" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/input_tit_cumple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimaryVariant"
+                android:gravity="center"
+                android:text="@string/tit_cumple"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <DatePicker
+                android:id="@+id/dp_tit_cumple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                tools:targetApi="lollipop" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_tit_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margen_hor"
+                    android:background="@color/colorPrimaryVariant"
+                    android:hint="@string/tit_telefono"
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/margen_izq"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:paddingEnd="@dimen/margen_der"
+                    android:paddingRight="@dimen/margen_der" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_tit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryVariant"
+                    android:hint="@string/tit_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/margen_izq"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:paddingEnd="@dimen/margen_der"
+                    android:paddingRight="@dimen/margen_der" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_tit_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_gravity="start"
+                    android:background="@color/colorPrimaryVariant"
+                    android:hint="@string/tit_descripcion"
+                    android:inputType="textShortMessage"
+                    android:paddingStart="@dimen/margen_izq"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:paddingEnd="@dimen/margen_der"
+                    android:paddingRight="@dimen/margen_der" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonSig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margen_hor"
+                    android:layout_marginLeft="@dimen/margen_hor"
+                    android:layout_marginTop="@dimen/margen_hor"
+                    android:layout_marginEnd="@dimen/margen_ver"
+                    android:layout_marginRight="@dimen/margen_ver"
+                    android:onClick="avanzar"
+                    android:text="@string/next_button" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

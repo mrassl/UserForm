@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingLeft="@dimen/margen_ver"
+    android:paddingEnd="@dimen/margen_hor"
+    android:paddingRight="@dimen/margen_ver"
+    tools:context=".ConfirmDatos">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvConfirmarDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_tittle"
+                android:gravity="center_horizontal"
+                android:text="@string/confirm_tittle"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold|italic" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_hor"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgNombre"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sharp_person_black_48dp"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_tit_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margen_izq"
+                    android:layout_marginLeft="@dimen/margen_der"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_hor"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgFecha"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_calendar_today_black_48dp"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_tit_cumple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margen_izq"
+                    android:layout_marginLeft="@dimen/margen_der"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_hor"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_phone_black_48"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_tit_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margen_izq"
+                    android:layout_marginLeft="@dimen/margen_der"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_hor"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgEmail"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/twotone_mail_black_48pt_3x"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_tit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margen_izq"
+                    android:layout_marginLeft="@dimen/margen_der"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_hor"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgDesc"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_text_snippet_black_48"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_tit_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margen_izq"
+                    android:layout_marginLeft="@dimen/margen_der"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margen_hor"
+                android:layout_marginLeft="@dimen/margen_hor"
+                android:layout_marginTop="@dimen/margen_hor"
+                android:layout_marginEnd="@dimen/margen_ver"
+                android:layout_marginRight="@dimen/margen_ver"
+                android:onClick="editar"
+                android:text="@string/edit_button" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

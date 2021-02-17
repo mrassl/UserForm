@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UserForm</string>
+    <string name="form_tittle">DATOS PERSONALES</string>
+    <string name="tit_nombre">Nombre:</string>
+    <string name="tit_cumple">Fecha de nacimiento:</string>
+    <string name="tit_telefono">Telèfono:</string>
+    <string name="tit_email">Email:</string>
+    <string name="tit_descripcion">Descripción del contacto:</string>
+    <string name="fecha_dia">Día</string>
+    <string name="fecha_mes">Mes</string>
+    <string name="fecha_anho">Año</string>
+    <string name="next_button">SIGUIENTE</string>
+    <string name="confirm_tittle">CONFIRMAR DATOS</string>
+    <string name="edit_button">EDITAR DATOS</string>
+</resources>
